@@ -11,14 +11,14 @@ export const auth = betterAuth({
     github: {
       clientId: process.env.GITHUB_CLIENT_ID!,
       clientSecret: process.env.GITHUB_CLIENT_SECRET!,
-      mapProfileToUser: (profile) => ({
+      mapProfileToUser: () => ({
         credits: 1500,
       }),
     },
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-      mapProfileToUser: (profile) => ({
+      mapProfileToUser: () => ({
         credits: 1500,
       }),
     },
